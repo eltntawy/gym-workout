@@ -16,170 +16,54 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-
-        /* Dark mode support using system preference */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #1c1917; /* stone-900 */
-                color: #e7e5e4; /* stone-200 */
-            }
-
-            /* Override Tailwind classes for dark mode */
-            .bg-stone-100 {
-                background-color: #292524 !important; /* stone-800 */
-            }
-
-            .text-stone-800 {
-                color: #e7e5e4 !important; /* stone-200 */
-            }
-
-            .text-stone-600 {
-                color: #d6d3d1 !important; /* stone-300 */
-            }
-
-            .text-stone-500 {
-                color: #a8a29e !important; /* stone-400 */
-            }
-
-            .bg-white {
-                background-color: #292524 !important; /* stone-800 */
-            }
-
-            .text-teal-800 {
-                color: #5eead4 !important; /* teal-300 */
-            }
-
-            .text-teal-700 {
-                color: #5eead4 !important; /* teal-300 */
-            }
-
-            .text-teal-600 {
-                color: #5eead4 !important; /* teal-300 */
-            }
-
-            .bg-teal-50 {
-                background-color: #134e4a !important; /* teal-900 */
-            }
-
-            .border-teal-500 {
-                border-color: #14b8a6 !important; /* teal-500 */
-            }
-
-            .bg-amber-50 {
-                background-color: #78350f !important; /* amber-900 */
-            }
-
-            .border-amber-500 {
-                border-color: #f59e0b !important; /* amber-500 */
-            }
-
-            .text-amber-600 {
-                color: #fbbf24 !important; /* amber-400 */
-            }
-
-            .bg-teal-600 {
-                background-color: #0d9488 !important; /* teal-600 */
-            }
-
-            .hover\:bg-teal-700:hover {
-                background-color: #0f766e !important; /* teal-700 */
-            }
-
-            .bg-gradient-to-r.from-teal-50.to-blue-50 {
-                background: linear-gradient(to right, #134e4a, #1e3a8a) !important; /* teal-900 to blue-900 */
-            }
-
-            .border-teal-200 {
-                border-color: #14b8a6 !important; /* teal-500 */
-            }
-
-            .text-teal-800 {
-                color: #5eead4 !important; /* teal-300 */
-            }
-
-            .text-stone-700 {
-                color: #d6d3d1 !important; /* stone-300 */
-            }
-
-            .bg-teal-100 {
-                background-color: #134e4a !important; /* teal-900 */
-            }
-
-            .text-teal-700 {
-                color: #5eead4 !important; /* teal-300 */
-            }
-
-            .border-stone-300 {
-                border-color: #57534e !important; /* stone-600 */
-            }
-
-            .shadow-sm {
-                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5) !important;
-            }
-
-            .hover\:bg-stone-50:hover {
-                background-color: #44403c !important; /* stone-700 */
-            }
-
-            /* Button specific dark mode */
-            .tab-btn.border-transparent.text-stone-500 {
-                color: #a8a29e !important; /* stone-400 */
-            }
-
-            .tab-btn.border-teal-600.text-teal-700.bg-white {
-                background-color: #134e4a !important; /* teal-900 */
-                color: #5eead4 !important; /* teal-300 */
-                border-color: #14b8a6 !important; /* teal-500 */
-            }
-        }
     </style>
 </head>
-<body class="bg-stone-100 text-stone-800">
+<body class="bg-stone-100 dark:bg-stone-900 text-stone-800 dark:text-stone-200">
 
     <div class="container mx-auto max-w-4xl p-4 sm:p-6 md:p-8">
 
         <header class="mb-8">
-            <h1 id="program-title" class="text-3xl sm:text-4xl font-bold text-teal-800 mb-2">Loading...</h1>
-            <p id="program-description" class="text-stone-600">Loading workout program...</p>
+            <h1 id="program-title" class="text-3xl sm:text-4xl font-bold text-teal-800 dark:text-teal-300 mb-2">Loading...</h1>
+            <p id="program-description" class="text-stone-600 dark:text-stone-300">Loading workout program...</p>
         </header>
 
-        <section class="bg-white rounded-xl shadow-sm p-6 mb-8">
-            <h2 class="text-xl font-bold mb-4 text-teal-700">Program Overview & Safety</h2>
+        <section class="bg-white dark:bg-stone-800 rounded-xl shadow-sm p-6 mb-8">
+            <h2 class="text-xl font-bold mb-4 text-teal-700 dark:text-teal-300">Program Overview & Safety</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-                <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-lg">
+                <div class="bg-teal-50 dark:bg-teal-900 border-l-4 border-teal-500 p-4 rounded-r-lg">
                     <h3 class="font-semibold mb-1">🎯 Primary Goal</h3>
                     <p id="primary-goal">Loading...</p>
                 </div>
-                <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                <div class="bg-amber-50 dark:bg-amber-900 border-l-4 border-amber-500 p-4 rounded-r-lg">
                     <h3 class="font-semibold mb-1">⚠️ Safety First</h3>
                     <p id="safety-note">Loading...</p>
                 </div>
             </div>
-             <div class="mt-6 border-t pt-6">
-                 <h3 class="text-lg font-semibold mb-3 text-teal-700">Weekly Structure</h3>
+             <div class="mt-6 border-t dark:border-stone-600 pt-6">
+                 <h3 class="text-lg font-semibold mb-3 text-teal-700 dark:text-teal-300">Weekly Structure</h3>
                  <div class="flex flex-wrap gap-4 text-center text-xs sm:text-sm">
-                     <div class="flex-1 p-3 bg-stone-100 rounded-lg min-w-[100px]">
+                     <div class="flex-1 p-3 bg-stone-100 dark:bg-stone-700 rounded-lg min-w-[100px]">
                          <span class="block font-bold">Warm-up</span>
-                         <span id="warmup-duration" class="text-stone-600">2 min</span>
+                         <span id="warmup-duration" class="text-stone-600 dark:text-stone-300">2 min</span>
                      </div>
-                     <div class="flex-1 p-3 bg-stone-100 rounded-lg min-w-[100px]">
+                     <div class="flex-1 p-3 bg-stone-100 dark:bg-stone-700 rounded-lg min-w-[100px]">
                          <span class="block font-bold">Workout</span>
-                         <span id="workout-moves" class="text-stone-600">7 Moves</span>
+                         <span id="workout-moves" class="text-stone-600 dark:text-stone-300">7 Moves</span>
                      </div>
-                     <div class="flex-1 p-3 bg-stone-100 rounded-lg min-w-[100px]">
+                     <div class="flex-1 p-3 bg-stone-100 dark:bg-stone-700 rounded-lg min-w-[100px]">
                          <span class="block font-bold">Cardio</span>
-                         <span id="cardio-duration" class="text-stone-600">15 min</span>
+                         <span id="cardio-duration" class="text-stone-600 dark:text-stone-300">15 min</span>
                      </div>
-                     <div class="flex-1 p-3 bg-stone-100 rounded-lg min-w-[100px]">
+                     <div class="flex-1 p-3 bg-stone-100 dark:bg-stone-700 rounded-lg min-w-[100px]">
                          <span class="block font-bold">Cool-down</span>
-                         <span id="cooldown-duration" class="text-stone-600">10 min</span>
+                         <span id="cooldown-duration" class="text-stone-600 dark:text-stone-300">10 min</span>
                      </div>
                  </div>
              </div>
         </section>
 
         <main>
-            <div id="tabs-container" class="flex flex-wrap gap-1 border-b border-stone-300 mb-6">
+            <div id="tabs-container" class="flex flex-wrap gap-1 border-b border-stone-300 dark:border-stone-600 mb-6">
                 <!-- Tabs will be generated by JavaScript -->
             </div>
 
@@ -188,7 +72,7 @@
             </div>
         </main>
         
-        <section id="cooldown-section" class="mt-8 pt-6 border-t border-stone-300">
+        <section id="cooldown-section" class="mt-8 pt-6 border-t border-stone-300 dark:border-stone-600">
             <!-- Cooldown will be generated by JavaScript -->
         </section>
 
