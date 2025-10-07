@@ -48,7 +48,7 @@
                      </div>
                      <div class="flex-1 p-3 bg-stone-100 rounded-lg min-w-[100px]">
                          <span class="block font-bold">Workout</span>
-                         <span class="text-stone-600">5-7 Moves</span>
+                         <span class="text-stone-600">7 Moves</span>
                      </div>
                      <div class="flex-1 p-3 bg-stone-100 rounded-lg min-w-[100px]">
                          <span class="block font-bold">Cardio</span>
@@ -63,256 +63,381 @@
         </section>
 
         <main>
-            <div id="tabs-container" class="flex flex-wrap border-b border-stone-300 mb-6">
-                <button data-day="day1" class="tab-btn flex-auto sm:flex-initial py-3 px-4 text-sm sm:text-base font-semibold border-b-2 border-teal-600 text-teal-700 bg-white rounded-t-lg">Day 1: Push</button>
-                <button data-day="day2" class="tab-btn flex-auto sm:flex-initial py-3 px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50">Day 2: Pull</button>
-                <button data-day="day3" class="tab-btn flex-auto sm:flex-initial py-3 px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50">Day 3: Legs</button>
-                <button data-day="day4" class="tab-btn flex-auto sm:flex-initial py-3 px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50">Day 4: Push</button>
-                <button data-day="day5" class="tab-btn flex-auto sm:flex-initial py-3 px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50">Day 5: Pull</button>
+            <div id="tabs-container" class="flex flex-wrap gap-1 border-b border-stone-300 mb-6">
+                <button data-day="day1" class="tab-btn flex-1 sm:flex-initial py-3 px-3 sm:px-4 text-sm sm:text-base font-semibold border-b-2 border-teal-600 text-teal-700 bg-white rounded-t-lg min-w-[80px]">Day 1: Push</button>
+                <button data-day="day2" class="tab-btn flex-1 sm:flex-initial py-3 px-3 sm:px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50 min-w-[80px]">Day 2: Pull</button>
+                <button data-day="day3" class="tab-btn flex-1 sm:flex-initial py-3 px-3 sm:px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50 min-w-[80px]">Day 3: Legs</button>
+                <button data-day="day4" class="tab-btn flex-1 sm:flex-initial py-3 px-3 sm:px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50 min-w-[80px]">Day 4: Push</button>
+                <button data-day="day5" class="tab-btn flex-1 sm:flex-initial py-3 px-3 sm:px-4 text-sm sm:text-base font-semibold border-b-2 border-transparent text-stone-500 hover:bg-stone-50 min-w-[80px]">Day 5: Pull</button>
             </div>
 
             <div id="workout-content">
                 <!-- Day 1: Push -->
                 <div id="day1" class="workout-day space-y-4">
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                            <div>
+                            <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🏋️ Machine Chest Press (Neutral Grip)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Minimize shoulder rotation.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=machine+chest+press+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=machine+chest+press+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                            <div>
+                            <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔗 Cable Chest Fly (Low to Mid)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Slight elbow bend, squeeze chest.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=cable+chest+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=cable+chest+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                            <div>
+                            <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🏋️ Dumbbell Floor Press</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Limited ROM protects shoulder. Neutral grip.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=dumbbell+floor+press+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=dumbbell+floor+press+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                            <div>
+                            <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔺 Rope Triceps Pushdown</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Keep elbows fixed at sides.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=rope+triceps+pushdown+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=rope+triceps+pushdown+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                            <div>
+                            <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔗 Cable Front Raise (Light)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Raise only to shoulder height.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=cable+front+raise+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=cable+front+raise+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">💪 Dumbbell Lateral Raise (Light)</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Lift to shoulder height, slight bend in elbows.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=dumbbell+lateral+raise+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">🔺 Diamond Push-Ups (Modified if needed)</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3 | <span class="font-semibold">Reps:</span> 8-12 | Hands close together, targets triceps.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=diamond+push+ups+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 2: Pull -->
                 <div id="day2" class="workout-day space-y-4 hidden">
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚣 Seated Cable Row (Neutral Grip)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Pull with back, avoid shrugging.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=seated+cable+row+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=seated+cable+row+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚣 Lat Pulldown (Neutral or Underhand Grip)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Pull to upper chest.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=lat+pulldown+underhand+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=lat+pulldown+underhand+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚣 Supported Dumbbell Row (Chest on Bench)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Isolates the back; prevents momentum.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=supported+dumbbell+row+chest+bench+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=supported+dumbbell+row+chest+bench+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">💪 Dumbbell Hammer Curl</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Palms face each other (easier on elbow).</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=dumbbell+hammer+curl+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=dumbbell+hammer+curl+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔗 Cable Face Pull (Light)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | High cable setting, pull toward face.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=cable+face+pull+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=cable+face+pull+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">💪 Cable Bicep Curl</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Constant tension through full range.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=cable+bicep+curl+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">🚣 Machine Reverse Fly</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Targets rear delts, squeeze shoulder blades.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=machine+reverse+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 3: Legs -->
                 <div id="day3" class="workout-day space-y-4 hidden">
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🦵 Leg Press (Medium Stance)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Keep back against the pad.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 90-120 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=leg+press+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=leg+press+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🦵 Romanian Deadlift (RDL) (Dumbbell)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Hinge at hips, slight knee bend.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 90-120 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=dumbbell+romanian+deadlift+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=dumbbell+romanian+deadlift+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🦵 Leg Curl Machine</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Slow, controlled contraction.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=leg+curl+machine+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=leg+curl+machine+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚶 Walking Lunges (Bodyweight or Light DBs)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 10–12/leg | Torso upright, knee over ankle.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=walking+lunges+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=walking+lunges+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                     <div class="bg-white rounded-xl shadow-sm p-5">
+                     <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🦶 Seated Calf Raise Machine</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Deep stretch at the bottom.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=seated+calf+raise+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=seated+calf+raise+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">🦵 Leg Extension Machine</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Focus on quad contraction at the top.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=leg+extension+machine+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">🧘 Goblet Squat</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3 | <span class="font-semibold">Reps:</span> 10-12 | Hold dumbbell at chest, squat deep.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=goblet+squat+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Day 4: Push -->
                 <div id="day4" class="workout-day space-y-4 hidden">
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🏋️ Machine Incline Press (Neutral Grip)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Targets upper chest.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=machine+incline+press+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=machine+incline+press+neutral+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔗 Cable Fly (Mid to Low)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Strong peak contraction in the chest.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=mid+to+low+cable+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=mid+to+low+cable+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                     <div class="bg-white rounded-xl shadow-sm p-5">
+                     <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🏋️ Dumbbell Floor Press</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Repeat movement.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=dumbbell+floor+press+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=dumbbell+floor+press+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔺 Rope Triceps Extension (Overhead)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Do seated, keep elbows stable and forward.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=seated+rope+overhead+triceps+extension+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=seated+rope+overhead+triceps+extension+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🧘 Plank (Core)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> Max Time | Maintain a straight line.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=perfect+plank+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=perfect+plank+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">💪 Cable Lateral Raise</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Constant tension on side delts.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=cable+lateral+raise+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">🔺 Close-Grip Bench Press</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3 | <span class="font-semibold">Reps:</span> 10-12 | Hands shoulder-width, targets triceps.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=close+grip+bench+press+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 5: Pull -->
                 <div id="day5" class="workout-day space-y-4 hidden">
-                     <div class="bg-white rounded-xl shadow-sm p-5">
+                     <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚣 One-Arm Cable Row</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8/arm | Control ROM with single handle.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=one+arm+cable+row+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=one+arm+cable+row+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚣 Lat Pulldown (Underhand Grip)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Repeat movement.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=lat+pulldown+underhand+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=lat+pulldown+underhand+grip+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🚣 Supported Dumbbell Row (Chest on Bench)</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8/arm | Repeat movement.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 60-90 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=supported+dumbbell+row+chest+bench+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=supported+dumbbell+row+chest+bench+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">💪 Concentration Curl</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8/arm | Isolate bicep, elbow braced on thigh.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=concentration+curl+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=concentration+curl+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl shadow-sm p-5">
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
                         <div class="flex flex-col sm:flex-row justify-between sm:items-center">
-                             <div>
+                             <div class="flex-1">
                                 <h3 class="text-lg font-bold text-stone-800">🔗 Rear Delt Cable Fly</h3>
                                 <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Set cables high, use light weight.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
                             </div>
-                            <a href="https://www.youtube.com/results?search_query=rear+delt+cable+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0">Watch Demo</a>
+                            <a href="https://www.youtube.com/results?search_query=rear+delt+cable+fly+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">💪 EZ Bar Preacher Curl</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3–4 | <span class="font-semibold">Reps:</span> 12→8 | Isolates biceps, prevents momentum.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=ez+bar+preacher+curl+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm p-4 sm:p-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                             <div class="flex-1">
+                                <h3 class="text-lg font-bold text-stone-800">🚣 Straight Arm Pulldown</h3>
+                                <p class="text-sm text-stone-600 mt-1"><span class="font-semibold">Sets:</span> 3 | <span class="font-semibold">Reps:</span> 12-15 | Targets lats, keep arms straight.</p>
+                                <p class="text-xs text-amber-600 mt-1">⏱️ <span class="font-semibold">Rest:</span> 45-60 seconds</p>
+                            </div>
+                            <a href="https://www.youtube.com/results?search_query=straight+arm+pulldown+form" target="_blank" class="mt-3 sm:mt-0 sm:ml-4 inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center hover:bg-teal-700 transition-colors shrink-0 w-full sm:w-auto">Watch Demo</a>
                         </div>
                     </div>
                 </div>
