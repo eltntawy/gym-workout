@@ -1,0 +1,395 @@
+{
+  "id": "beginner-5day",
+  "name": "Beginner 5-Day Workout Plan",
+  "description": "A shoulder-safe program for weight loss, muscle building, and endurance.",
+  "goals": {
+    "primary": "To lose weight, build muscle mass, and improve overall endurance with a structured weekly plan.",
+    "safety": "This plan is designed for limited shoulder ROM. Avoid high-stress movements and stop if you feel any pain. Focus on controlled tempo."
+  },
+  "structure": {
+    "warmup": "2 min",
+    "workout": "7 Moves",
+    "cardio": "15 min",
+    "cooldown": "10 min"
+  },
+  "warmupOptions": [
+    {
+      "name": "Treadmill",
+      "duration": "2 minutes",
+      "description": "Light jog or brisk walk to elevate heart rate",
+      "emoji": "🏃"
+    },
+    {
+      "name": "Stationary Bike",
+      "duration": "2 minutes",
+      "description": "Moderate pace cycling to warm up legs",
+      "emoji": "🚴"
+    },
+    {
+      "name": "Rowing Machine",
+      "duration": "2 minutes",
+      "description": "Steady rowing to engage full body",
+      "emoji": "🚣"
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "name": "Day 1: Push",
+      "exercises": [
+        {
+          "name": "Machine Chest Press (Neutral Grip)",
+          "emoji": "🏋️",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Minimize shoulder rotation.",
+          "rest": "60-90 seconds",
+          "videoQuery": "machine+chest+press+neutral+grip+form"
+        },
+        {
+          "name": "Cable Chest Fly (Low to Mid)",
+          "emoji": "🔗",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Slight elbow bend, squeeze chest.",
+          "rest": "60-90 seconds",
+          "videoQuery": "cable+chest+fly+form"
+        },
+        {
+          "name": "Dumbbell Floor Press",
+          "emoji": "🏋️",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Limited ROM protects shoulder. Neutral grip.",
+          "rest": "60-90 seconds",
+          "videoQuery": "dumbbell+floor+press+neutral+grip+form"
+        },
+        {
+          "name": "Rope Triceps Pushdown",
+          "emoji": "🔺",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Keep elbows fixed at sides.",
+          "rest": "45-60 seconds",
+          "videoQuery": "rope+triceps+pushdown+form"
+        },
+        {
+          "name": "Cable Front Raise (Light)",
+          "emoji": "🔗",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Raise only to shoulder height.",
+          "rest": "45-60 seconds",
+          "videoQuery": "cable+front+raise+form"
+        },
+        {
+          "name": "Dumbbell Lateral Raise (Light)",
+          "emoji": "💪",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Lift to shoulder height, slight bend in elbows.",
+          "rest": "45-60 seconds",
+          "videoQuery": "dumbbell+lateral+raise+form"
+        },
+        {
+          "name": "Diamond Push-Ups (Modified if needed)",
+          "emoji": "🔺",
+          "sets": "3",
+          "reps": "8-12",
+          "notes": "Hands close together, targets triceps.",
+          "rest": "45-60 seconds",
+          "videoQuery": "diamond+push+ups+form"
+        }
+      ]
+    },
+    {
+      "id": "day2",
+      "name": "Day 2: Pull",
+      "exercises": [
+        {
+          "name": "Seated Cable Row (Neutral Grip)",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Pull with back, avoid shrugging.",
+          "rest": "60-90 seconds",
+          "videoQuery": "seated+cable+row+neutral+grip+form"
+        },
+        {
+          "name": "Lat Pulldown (Neutral or Underhand Grip)",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Pull to upper chest.",
+          "rest": "60-90 seconds",
+          "videoQuery": "lat+pulldown+underhand+grip+form"
+        },
+        {
+          "name": "Supported Dumbbell Row (Chest on Bench)",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Isolates the back; prevents momentum.",
+          "rest": "60-90 seconds",
+          "videoQuery": "supported+dumbbell+row+chest+bench+form"
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "emoji": "💪",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Palms face each other (easier on elbow).",
+          "rest": "45-60 seconds",
+          "videoQuery": "dumbbell+hammer+curl+form"
+        },
+        {
+          "name": "Cable Face Pull (Light)",
+          "emoji": "🔗",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "High cable setting, pull toward face.",
+          "rest": "45-60 seconds",
+          "videoQuery": "cable+face+pull+form"
+        },
+        {
+          "name": "Cable Bicep Curl",
+          "emoji": "💪",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Constant tension through full range.",
+          "rest": "45-60 seconds",
+          "videoQuery": "cable+bicep+curl+form"
+        },
+        {
+          "name": "Machine Reverse Fly",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Targets rear delts, squeeze shoulder blades.",
+          "rest": "45-60 seconds",
+          "videoQuery": "machine+reverse+fly+form"
+        }
+      ]
+    },
+    {
+      "id": "day3",
+      "name": "Day 3: Legs",
+      "exercises": [
+        {
+          "name": "Leg Press (Medium Stance)",
+          "emoji": "🦵",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Keep back against the pad.",
+          "rest": "90-120 seconds",
+          "videoQuery": "leg+press+form"
+        },
+        {
+          "name": "Romanian Deadlift (RDL) (Dumbbell)",
+          "emoji": "🦵",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Hinge at hips, slight knee bend.",
+          "rest": "90-120 seconds",
+          "videoQuery": "dumbbell+romanian+deadlift+form"
+        },
+        {
+          "name": "Leg Curl Machine",
+          "emoji": "🦵",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Slow, controlled contraction.",
+          "rest": "60-90 seconds",
+          "videoQuery": "leg+curl+machine+form"
+        },
+        {
+          "name": "Walking Lunges (Bodyweight or Light DBs)",
+          "emoji": "🚶",
+          "sets": "3–4",
+          "reps": "10–12/leg",
+          "notes": "Torso upright, knee over ankle.",
+          "rest": "60-90 seconds",
+          "videoQuery": "walking+lunges+form"
+        },
+        {
+          "name": "Seated Calf Raise Machine",
+          "emoji": "🦶",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Deep stretch at the bottom.",
+          "rest": "45-60 seconds",
+          "videoQuery": "seated+calf+raise+form"
+        },
+        {
+          "name": "Leg Extension Machine",
+          "emoji": "🦵",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Focus on quad contraction at the top.",
+          "rest": "60-90 seconds",
+          "videoQuery": "leg+extension+machine+form"
+        },
+        {
+          "name": "Goblet Squat",
+          "emoji": "🧘",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Hold dumbbell at chest, squat deep.",
+          "rest": "60-90 seconds",
+          "videoQuery": "goblet+squat+form"
+        }
+      ]
+    },
+    {
+      "id": "day4",
+      "name": "Day 4: Push",
+      "exercises": [
+        {
+          "name": "Machine Incline Press (Neutral Grip)",
+          "emoji": "🏋️",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Targets upper chest.",
+          "rest": "60-90 seconds",
+          "videoQuery": "machine+incline+press+neutral+grip+form"
+        },
+        {
+          "name": "Cable Fly (Mid to Low)",
+          "emoji": "🔗",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Strong peak contraction in the chest.",
+          "rest": "60-90 seconds",
+          "videoQuery": "mid+to+low+cable+fly+form"
+        },
+        {
+          "name": "Dumbbell Floor Press",
+          "emoji": "🏋️",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Repeat movement.",
+          "rest": "60-90 seconds",
+          "videoQuery": "dumbbell+floor+press+form"
+        },
+        {
+          "name": "Rope Triceps Extension (Overhead)",
+          "emoji": "🔺",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Do seated, keep elbows stable and forward.",
+          "rest": "45-60 seconds",
+          "videoQuery": "seated+rope+overhead+triceps+extension+form"
+        },
+        {
+          "name": "Plank (Core)",
+          "emoji": "🧘",
+          "sets": "3–4",
+          "reps": "Max Time",
+          "notes": "Maintain a straight line.",
+          "rest": "45-60 seconds",
+          "videoQuery": "perfect+plank+form"
+        },
+        {
+          "name": "Cable Lateral Raise",
+          "emoji": "💪",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Constant tension on side delts.",
+          "rest": "45-60 seconds",
+          "videoQuery": "cable+lateral+raise+form"
+        },
+        {
+          "name": "Close-Grip Bench Press",
+          "emoji": "🔺",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Hands shoulder-width, targets triceps.",
+          "rest": "60-90 seconds",
+          "videoQuery": "close+grip+bench+press+form"
+        }
+      ]
+    },
+    {
+      "id": "day5",
+      "name": "Day 5: Pull",
+      "exercises": [
+        {
+          "name": "One-Arm Cable Row",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8/arm",
+          "notes": "Control ROM with single handle.",
+          "rest": "60-90 seconds",
+          "videoQuery": "one+arm+cable+row+form"
+        },
+        {
+          "name": "Lat Pulldown (Underhand Grip)",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Repeat movement.",
+          "rest": "60-90 seconds",
+          "videoQuery": "lat+pulldown+underhand+grip+form"
+        },
+        {
+          "name": "Supported Dumbbell Row (Chest on Bench)",
+          "emoji": "🚣",
+          "sets": "3–4",
+          "reps": "12→8/arm",
+          "notes": "Repeat movement.",
+          "rest": "60-90 seconds",
+          "videoQuery": "supported+dumbbell+row+chest+bench+form"
+        },
+        {
+          "name": "Concentration Curl",
+          "emoji": "💪",
+          "sets": "3–4",
+          "reps": "12→8/arm",
+          "notes": "Isolate bicep, elbow braced on thigh.",
+          "rest": "45-60 seconds",
+          "videoQuery": "concentration+curl+form"
+        },
+        {
+          "name": "Rear Delt Cable Fly",
+          "emoji": "🔗",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Set cables high, use light weight.",
+          "rest": "45-60 seconds",
+          "videoQuery": "rear+delt+cable+fly+form"
+        },
+        {
+          "name": "EZ Bar Preacher Curl",
+          "emoji": "💪",
+          "sets": "3–4",
+          "reps": "12→8",
+          "notes": "Isolates biceps, prevents momentum.",
+          "rest": "45-60 seconds",
+          "videoQuery": "ez+bar+preacher+curl+form"
+        },
+        {
+          "name": "Straight Arm Pulldown",
+          "emoji": "🚣",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Targets lats, keep arms straight.",
+          "rest": "45-60 seconds",
+          "videoQuery": "straight+arm+pulldown+form"
+        }
+      ]
+    }
+  ],
+  "cooldown": {
+    "cardio": {
+      "name": "15-Minute Cardio",
+      "emoji": "🏃",
+      "description": "Moderate intensity (Incline walk, steady cycle, or elliptical)."
+    },
+    "stretch": {
+      "name": "10-Minute Full-Body Stretch",
+      "emoji": "🧘",
+      "description": "Focus on major muscle groups. Hold each stretch for 20-30 seconds.",
+      "videoQuery": "10+minute+full+body+stretch+cooldown"
+    }
+  }
+}
