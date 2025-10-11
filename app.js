@@ -17,28 +17,39 @@ class WorkoutApp {
         // Multiple programs available for different training goals
         this.programs = ['arturos-workout', 'mohamed-ali-workout'];
         
-        // Load metadata for each program
-        for (const programId of this.programs) {
+        // Load metadata for each program in parallel
+        const loadPromises = this.programs.map(async (programId) => {
             try {
                 const response = await fetch(`data/${programId}.json`);
                 const data = await response.json();
-                this.programsMetadata.push({
+                return {
                     id: programId,
                     name: data.name,
                     description: data.description,
                     goals: data.goals,
                     structure: data.structure
-                });
+                };
             } catch (error) {
                 console.error(`Error loading program ${programId}:`, error);
+                return null;
             }
-        }
+        });
+        
+        const results = await Promise.all(loadPromises);
+        this.programsMetadata = results.filter(program => program !== null);
     }
 
     showWelcomePage() {
         // Hide program view and show welcome page
-        document.getElementById('program-view').classList.add('hidden');
-        document.getElementById('welcome-page').classList.remove('hidden');
+        const programView = document.getElementById('program-view');
+        const welcomePage = document.getElementById('welcome-page');
+        
+        if (programView) {
+            programView.classList.add('hidden');
+        }
+        if (welcomePage) {
+            welcomePage.classList.remove('hidden');
+        }
         
         // Render program selection cards
         this.renderProgramSelection();
@@ -46,6 +57,8 @@ class WorkoutApp {
 
     renderProgramSelection() {
         const container = document.getElementById('program-selection');
+        if (!container) return;
+        
         container.innerHTML = '';
         
         this.programsMetadata.forEach(program => {
@@ -88,8 +101,15 @@ class WorkoutApp {
             this.currentProgram = await response.json();
             
             // Hide welcome page and show program view
-            document.getElementById('welcome-page').classList.add('hidden');
-            document.getElementById('program-view').classList.remove('hidden');
+            const welcomePage = document.getElementById('welcome-page');
+            const programView = document.getElementById('program-view');
+            
+            if (welcomePage) {
+                welcomePage.classList.add('hidden');
+            }
+            if (programView) {
+                programView.classList.remove('hidden');
+            }
             
             this.renderProgram();
         } catch (error) {
