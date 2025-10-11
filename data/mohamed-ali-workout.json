@@ -1,0 +1,356 @@
+{
+  "id": "mohamed-ali-workout",
+  "name": "Mohamed Ali's Workout",
+  "description": "A 6-day Push-Pull-Leg split program designed to hit most muscles through varied movements using barbells, dumbbells, and machines.",
+  "goals": {
+    "primary": "To build strength and muscle mass through a structured 6-day Push-Pull-Leg routine with varied movements.",
+    "safety": "Focus on proper form with all exercises. Warm up thoroughly before lifting heavy weights. Stop immediately if you feel any sharp pain."
+  },
+  "structure": {
+    "warmup": "2 min",
+    "workout": "5 Moves",
+    "cardio": "15 min",
+    "cooldown": "10 min"
+  },
+  "warmupOptions": [
+    {
+      "name": "Treadmill",
+      "duration": "2 minutes",
+      "description": "Light jog or brisk walk to elevate heart rate",
+      "emoji": "🏃"
+    },
+    {
+      "name": "Stationary Bike",
+      "duration": "2 minutes",
+      "description": "Moderate pace cycling to warm up legs",
+      "emoji": "🚴"
+    },
+    {
+      "name": "Rowing Machine",
+      "duration": "2 minutes",
+      "description": "Steady rowing to engage full body",
+      "emoji": "🚣"
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "name": "Day 1: Push",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "emoji": "🏋️",
+          "sets": "4",
+          "reps": "8-10",
+          "notes": "Complex movement. Keep shoulder blades retracted and feet planted.",
+          "rest": "90-120 seconds",
+          "videoQuery": "barbell+bench+press+proper+form"
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "emoji": "💪",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Press straight up, avoid arching lower back.",
+          "rest": "60-90 seconds",
+          "videoQuery": "dumbbell+shoulder+press+form"
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "emoji": "🏋️",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Set bench to 30-45 degrees for upper chest.",
+          "rest": "60-90 seconds",
+          "videoQuery": "incline+dumbbell+press+form"
+        },
+        {
+          "name": "Cable Triceps Pushdown",
+          "emoji": "🔺",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Keep elbows pinned to sides, full extension at bottom.",
+          "rest": "45-60 seconds",
+          "videoQuery": "cable+triceps+pushdown+form"
+        },
+        {
+          "name": "Machine Chest Fly",
+          "emoji": "🦅",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Squeeze chest at peak contraction.",
+          "rest": "45-60 seconds",
+          "videoQuery": "machine+chest+fly+form"
+        }
+      ]
+    },
+    {
+      "id": "day2",
+      "name": "Day 2: Pull",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "emoji": "🏋️",
+          "sets": "4",
+          "reps": "6-8",
+          "notes": "Complex movement. Keep back neutral, drive through heels.",
+          "rest": "120-180 seconds",
+          "videoQuery": "barbell+deadlift+proper+form"
+        },
+        {
+          "name": "Pull-ups (Assisted if needed)",
+          "emoji": "💪",
+          "sets": "3",
+          "reps": "8-10",
+          "notes": "Full range of motion, chin over bar.",
+          "rest": "90-120 seconds",
+          "videoQuery": "pull+ups+proper+form"
+        },
+        {
+          "name": "Dumbbell Row",
+          "emoji": "🚣",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Pull elbow back, squeeze lat at top.",
+          "rest": "60-90 seconds",
+          "videoQuery": "one+arm+dumbbell+row+form"
+        },
+        {
+          "name": "Cable Face Pull",
+          "emoji": "🔗",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Pull towards face, targets rear delts.",
+          "rest": "45-60 seconds",
+          "videoQuery": "cable+face+pull+form"
+        },
+        {
+          "name": "Barbell Bicep Curl",
+          "emoji": "💪",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Keep elbows stationary, control the weight.",
+          "rest": "45-60 seconds",
+          "videoQuery": "barbell+bicep+curl+form"
+        }
+      ]
+    },
+    {
+      "id": "day3",
+      "name": "Day 3: Legs",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "emoji": "🏋️",
+          "sets": "4",
+          "reps": "8-10",
+          "notes": "Complex movement. Maintain upright torso, depth to parallel.",
+          "rest": "120-180 seconds",
+          "videoQuery": "barbell+back+squat+proper+form"
+        },
+        {
+          "name": "Leg Press Machine",
+          "emoji": "🦵",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Feet shoulder-width, drive through heels.",
+          "rest": "90-120 seconds",
+          "videoQuery": "leg+press+machine+form"
+        },
+        {
+          "name": "Romanian Deadlift (Barbell)",
+          "emoji": "🏋️",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Hinge at hips, feel stretch in hamstrings.",
+          "rest": "60-90 seconds",
+          "videoQuery": "barbell+romanian+deadlift+form"
+        },
+        {
+          "name": "Leg Curl Machine",
+          "emoji": "🦵",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Control the movement, squeeze hamstrings.",
+          "rest": "45-60 seconds",
+          "videoQuery": "leg+curl+machine+form"
+        },
+        {
+          "name": "Standing Calf Raise Machine",
+          "emoji": "🦶",
+          "sets": "4",
+          "reps": "15-20",
+          "notes": "Full stretch at bottom, rise onto toes.",
+          "rest": "45-60 seconds",
+          "videoQuery": "standing+calf+raise+form"
+        }
+      ]
+    },
+    {
+      "id": "day4",
+      "name": "Day 4: Push",
+      "exercises": [
+        {
+          "name": "Barbell Overhead Press",
+          "emoji": "🏋️",
+          "sets": "4",
+          "reps": "8-10",
+          "notes": "Complex movement. Press from shoulders, core tight.",
+          "rest": "90-120 seconds",
+          "videoQuery": "barbell+overhead+press+form"
+        },
+        {
+          "name": "Dumbbell Incline Fly",
+          "emoji": "🦅",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Slight bend in elbows, stretch at bottom.",
+          "rest": "60-90 seconds",
+          "videoQuery": "dumbbell+incline+fly+form"
+        },
+        {
+          "name": "Machine Shoulder Press",
+          "emoji": "💪",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Controlled tempo, full range of motion.",
+          "rest": "60-90 seconds",
+          "videoQuery": "machine+shoulder+press+form"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "emoji": "💪",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Raise to shoulder height, control descent.",
+          "rest": "45-60 seconds",
+          "videoQuery": "dumbbell+lateral+raise+form"
+        },
+        {
+          "name": "Overhead Triceps Extension (Dumbbell)",
+          "emoji": "🔺",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Keep elbows close to head, full stretch.",
+          "rest": "45-60 seconds",
+          "videoQuery": "dumbbell+overhead+triceps+extension+form"
+        }
+      ]
+    },
+    {
+      "id": "day5",
+      "name": "Day 5: Pull",
+      "exercises": [
+        {
+          "name": "Barbell Bent-Over Row",
+          "emoji": "🏋️",
+          "sets": "4",
+          "reps": "8-10",
+          "notes": "Complex movement. Hinge at hips, pull to lower chest.",
+          "rest": "90-120 seconds",
+          "videoQuery": "barbell+bent+over+row+form"
+        },
+        {
+          "name": "Lat Pulldown Machine",
+          "emoji": "🚣",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Pull to upper chest, squeeze shoulder blades.",
+          "rest": "60-90 seconds",
+          "videoQuery": "lat+pulldown+form"
+        },
+        {
+          "name": "Cable Row (Seated)",
+          "emoji": "🚣",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Keep back straight, pull to abdomen.",
+          "rest": "60-90 seconds",
+          "videoQuery": "seated+cable+row+form"
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "emoji": "💪",
+          "sets": "3",
+          "reps": "10-12",
+          "notes": "Neutral grip, control the movement.",
+          "rest": "45-60 seconds",
+          "videoQuery": "dumbbell+hammer+curl+form"
+        },
+        {
+          "name": "Machine Reverse Fly",
+          "emoji": "🦅",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Targets rear delts, squeeze at contraction.",
+          "rest": "45-60 seconds",
+          "videoQuery": "machine+reverse+fly+form"
+        }
+      ]
+    },
+    {
+      "id": "day6",
+      "name": "Day 6: Legs",
+      "exercises": [
+        {
+          "name": "Barbell Front Squat",
+          "emoji": "🏋️",
+          "sets": "4",
+          "reps": "8-10",
+          "notes": "Complex movement. Keep elbows high, upright torso.",
+          "rest": "120-180 seconds",
+          "videoQuery": "barbell+front+squat+form"
+        },
+        {
+          "name": "Bulgarian Split Squat (Dumbbells)",
+          "emoji": "🦵",
+          "sets": "3",
+          "reps": "10-12/leg",
+          "notes": "Rear foot elevated, front knee tracks over toe.",
+          "rest": "60-90 seconds",
+          "videoQuery": "bulgarian+split+squat+dumbbell+form"
+        },
+        {
+          "name": "Leg Extension Machine",
+          "emoji": "🦵",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Squeeze quads at top, controlled lowering.",
+          "rest": "45-60 seconds",
+          "videoQuery": "leg+extension+machine+form"
+        },
+        {
+          "name": "Lying Leg Curl Machine",
+          "emoji": "🦵",
+          "sets": "3",
+          "reps": "12-15",
+          "notes": "Curl heels to glutes, avoid lifting hips.",
+          "rest": "45-60 seconds",
+          "videoQuery": "lying+leg+curl+form"
+        },
+        {
+          "name": "Seated Calf Raise Machine",
+          "emoji": "🦶",
+          "sets": "4",
+          "reps": "15-20",
+          "notes": "Full stretch at bottom, pause at top.",
+          "rest": "45-60 seconds",
+          "videoQuery": "seated+calf+raise+form"
+        }
+      ]
+    }
+  ],
+  "cooldown": {
+    "cardio": {
+      "name": "15-Minute Cardio",
+      "emoji": "🏃",
+      "description": "Moderate intensity (Incline walk, steady cycle, or elliptical)."
+    },
+    "stretch": {
+      "name": "10-Minute Full-Body Stretch",
+      "emoji": "🧘",
+      "description": "Focus on major muscle groups. Hold each stretch for 20-30 seconds.",
+      "videoQuery": "10+minute+full+body+stretch+cooldown"
+    }
+  }
+}

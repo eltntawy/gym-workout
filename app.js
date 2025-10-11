@@ -15,8 +15,8 @@ class WorkoutApp {
 
     async loadPrograms() {
         // Load available programs
-        // For now, we have one program, but this can be extended
-        this.programs = ['beginner-5day'];
+        // Multiple programs available for different training goals
+        this.programs = ['arturos-workout', 'mohamed-ali-workout'];
     }
 
     async loadProgram(programId) {
