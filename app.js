@@ -3,13 +3,12 @@ class WorkoutApp {
     constructor() {
         this.currentProgram = null;
         this.programs = [];
+        this.programsMetadata = [];
     }
 
     async init() {
         await this.loadPrograms();
-        if (this.programs.length > 0) {
-            await this.loadProgram(this.programs[0]);
-        }
+        this.showWelcomePage();
         this.setupEventListeners();
     }
 
@@ -17,12 +16,81 @@ class WorkoutApp {
         // Load available programs
         // Multiple programs available for different training goals
         this.programs = ['arturos-workout', 'mohamed-ali-workout'];
+        
+        // Load metadata for each program
+        for (const programId of this.programs) {
+            try {
+                const response = await fetch(`data/${programId}.json`);
+                const data = await response.json();
+                this.programsMetadata.push({
+                    id: programId,
+                    name: data.name,
+                    description: data.description,
+                    goals: data.goals,
+                    structure: data.structure
+                });
+            } catch (error) {
+                console.error(`Error loading program ${programId}:`, error);
+            }
+        }
+    }
+
+    showWelcomePage() {
+        // Hide program view and show welcome page
+        document.getElementById('program-view').classList.add('hidden');
+        document.getElementById('welcome-page').classList.remove('hidden');
+        
+        // Render program selection cards
+        this.renderProgramSelection();
+    }
+
+    renderProgramSelection() {
+        const container = document.getElementById('program-selection');
+        container.innerHTML = '';
+        
+        this.programsMetadata.forEach(program => {
+            const card = document.createElement('div');
+            card.className = 'bg-white dark:bg-slate-900 rounded-xl shadow-lg dark:shadow-slate-950/50 p-6 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-blue-600 transition-all cursor-pointer';
+            
+            card.innerHTML = `
+                <div class="flex flex-col sm:flex-row justify-between sm:items-start gap-4">
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-2">${program.name}</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mb-4">${program.description}</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 border-l-4 border-emerald-500 dark:border-emerald-600 p-3 rounded-r">
+                                <h3 class="font-semibold text-sm text-emerald-900 dark:text-emerald-400 mb-1">🎯 Primary Goal</h3>
+                                <p class="text-xs text-slate-700 dark:text-slate-300">${program.goals.primary}</p>
+                            </div>
+                            <div class="bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 dark:border-blue-600 p-3 rounded-r">
+                                <h3 class="font-semibold text-sm text-blue-900 dark:text-blue-400 mb-1">📋 Structure</h3>
+                                <p class="text-xs text-slate-700 dark:text-slate-300">
+                                    Warmup: ${program.structure.warmup} • Workout: ${program.structure.workout}<br>
+                                    Cardio: ${program.structure.cardio} • Cooldown: ${program.structure.cooldown}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="select-program-btn bg-blue-600 dark:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-md dark:shadow-slate-950/50 shrink-0 w-full sm:w-auto" data-program="${program.id}">
+                        Start Program →
+                    </button>
+                </div>
+            `;
+            
+            container.appendChild(card);
+        });
     }
 
     async loadProgram(programId) {
         try {
             const response = await fetch(`data/${programId}.json`);
             this.currentProgram = await response.json();
+            
+            // Hide welcome page and show program view
+            document.getElementById('welcome-page').classList.add('hidden');
+            document.getElementById('program-view').classList.remove('hidden');
+            
             this.renderProgram();
         } catch (error) {
             console.error('Error loading program:', error);
@@ -208,6 +276,23 @@ class WorkoutApp {
                 this.setActiveTab(button);
             }
         });
+        
+        // Program selection buttons
+        document.addEventListener('click', (event) => {
+            const selectBtn = event.target.closest('.select-program-btn');
+            if (selectBtn) {
+                const programId = selectBtn.getAttribute('data-program');
+                this.loadProgram(programId);
+            }
+        });
+        
+        // Back to selection button
+        const backBtn = document.getElementById('back-to-selection');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                this.showWelcomePage();
+            });
+        }
     }
 
     showDay(dayId) {
